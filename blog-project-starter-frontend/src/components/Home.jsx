@@ -69,7 +69,7 @@ function Home() {
                     <h2 className='text-3xl sm:text-7xl font-bold'>My Awesome</h2>
                     <h2 className='text-3xl sm:text-7xl font-bold text-orange-400'>Services</h2>
                     <p className='my-2'>I have attached my Resume here for your Reference</p>
-                    <a href="/blog-project-starter-frontend/public/Joshua Resume.pdf" download="My_Resume.pdf">
+                    <a href="Joshua Resume.pdf" download="My_Resume.pdf">
                     <button className='button-style mt-2'>Download CV</button>
                     </a>
                 </div>
@@ -118,4 +118,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;
