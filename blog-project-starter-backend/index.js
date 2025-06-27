@@ -28,7 +28,7 @@ const blogSchema = new mongoose.Schema({
 const Blog = mongoose.model('Blog', blogSchema);
 
 // Routes
-app.get('https://blog-project-work-8.onrender.com//blogs', async (req, res) => {
+app.get('https://blog-project-work-8.onrender.com/api/blogs', async (req, res) => {
   try {
     const blogs = await Blog.find({});
     console.log(blogs)
@@ -39,7 +39,7 @@ app.get('https://blog-project-work-8.onrender.com//blogs', async (req, res) => {
 });
 
 
-app.patch('https://blog-project-work-8.onrender.com//blogs/like/:id', async (req, res) => {
+app.patch('https://blog-project-work-8.onrender.com/api/blogs/like/:id', async (req, res) => {
     try {
       const blog = await Blog.findById(req.params.id);
       if (!blog) {
